@@ -1,0 +1,52 @@
+.arrayBar {
+  width: 5px;
+  display: inline-block;
+  margin: 0 1px;
+  transition: all, 0.1s, step-end, ease-in-out;
+  transition-timing-function: ease;
+}
+
+.arrayContainer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.buttonContainer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.titleContainer {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: #046582;
+}
+
+.button {
+  margin: 0 3px;
+  background-color: #395b64;
+}
+
+.button :hover {
+  cursor: pointer;
+}
+
+.slider {
+  margin-top: 10px;
+  color: #7d9d9c;
+}
