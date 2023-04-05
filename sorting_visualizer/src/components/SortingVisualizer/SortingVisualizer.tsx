@@ -184,7 +184,7 @@ export function SortingVisualizer() {
               Adjust Size and Speed of Visualizer
             </Typography>
             <Slider
-              className={styles.slider}
+              style={{ marginTop: 10, color: '#7d9d9c' }}
               disabled={isSorting}
               value={value}
               onChange={handleSliderChange}
@@ -192,7 +192,7 @@ export function SortingVisualizer() {
               max={200}
             />
             <Button
-              className={styles.button}
+              style={{ margin: 3, backgroundColor: '#395b64' }}
               variant='contained'
               disabled={isSorting && !completed}
               onClick={resetArray}
@@ -200,7 +200,7 @@ export function SortingVisualizer() {
               Generate New Array
             </Button>
             <Button
-              className={styles.button}
+              style={{ margin: 3, backgroundColor: '#395b64' }}
               variant='contained'
               disabled={isSorting}
               onClick={handleMergeSort}
@@ -208,7 +208,7 @@ export function SortingVisualizer() {
               Merge Sort
             </Button>
             <Button
-              className={styles.button}
+              style={{ margin: 3, backgroundColor: '#395b64' }}
               variant='contained'
               disabled={isSorting}
               onClick={handleBubbleSort}
@@ -216,7 +216,7 @@ export function SortingVisualizer() {
               Bubble Sort
             </Button>
             <Button
-              className={styles.button}
+              style={{ margin: 3, backgroundColor: '#395b64' }}
               variant='contained'
               disabled={isSorting}
               onClick={handleSelectionSort}

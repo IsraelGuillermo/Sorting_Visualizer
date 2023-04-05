@@ -36,17 +36,3 @@
   align-items: center;
   background-color: #046582;
 }
-
-.button {
-  margin: 0 3px;
-  background-color: #395b64;
-}
-
-.button :hover {
-  cursor: pointer;
-}
-
-.slider {
-  margin-top: 10px;
-  color: #7d9d9c;
-}
