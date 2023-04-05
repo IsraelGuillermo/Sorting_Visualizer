@@ -11,7 +11,7 @@ export function SortingVisualizer() {
   const [completed, setCompleted] = useState(false);
   const [isSorting, setIsSorting] = useState(false);
   const [array, setArray] = useState<number[]>([]);
-  const [value, setValue] = useState<number | number[]>(50);
+  const [value, setValue] = useState<number>(50);
   const numberOfArrayBars = value;
   const AnimationSpeed =
     numberOfArrayBars < 75 ? 25 : numberOfArrayBars > 200 ? 5 : 10;
@@ -25,7 +25,7 @@ export function SortingVisualizer() {
       setArray(numArray);
     };
     resetArray();
-  }, [value]);
+  }, [value, numberOfArrayBars]);
 
   const resetArray = () => {
     setIsSorting(false);
@@ -71,8 +71,10 @@ export function SortingVisualizer() {
     }
   };
   const handleSliderChange = (event: Event, newValue: number | number[]) => {
-    event.preventDefault();
-    setValue(newValue);
+    if (typeof newValue === 'number') {
+      event.preventDefault();
+      setValue(newValue);
+    }
   };
 
   const handleBubbleSort = () => {
